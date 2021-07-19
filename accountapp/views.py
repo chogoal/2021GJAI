@@ -66,7 +66,6 @@ class AccountUpdateView(UpdateView):
             return HttpResponseRedirect(reverse('accountapp:login'))
 
 
-
 class AccountDeleteView(DeleteView):
     model = User
     context_object_name = 'target_user'
