@@ -4,14 +4,21 @@
 {% block content %}
 
     <style>
+
+        .container {
+            padding: 0;
+            margin: 0 auto;
+        }
+
         .container div {
-          width: 280px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border-radius: 1rem;
-          flex-direction: column;
-          box-shadow: 0 0 1rem darkgray;
+            width: 45%;
+            max-width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 1rem;
+            flex-direction: column;
+            box-shadow: 0 0 1rem darkgray;
         }
 
         div img {
@@ -21,7 +28,7 @@
 
     </style>
 
-    <div class="container my-5">
+    <div class="container my-3">
 
         {% for article in article_list %}
 
