@@ -40,6 +40,6 @@ class SubscriptionListView(ListView):
     paginate_by = 20
 
     def get_queryset(self):
-        project_list = Subscription.objects.filter(user=self.request.user).value_list('project')
+        project_list = Subscription.objects.filter(user=self.request.user).values_list('project')
         article_list = Article.objects.filter(project__in=project_list)
         return article_list
